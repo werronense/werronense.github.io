@@ -92,6 +92,14 @@ a:hover {
   width: 100vw;
 }
 
+.row {
+  display: flex;
+}
+
+.row .example ~ .example {
+  margin-left: 10vw;
+}
+
 .headline {
   height: 40vh;
   background-image: url("../images/volcano.jpg");
