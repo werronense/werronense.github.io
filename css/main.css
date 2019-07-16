@@ -64,6 +64,12 @@ h2 {
   width: 100vw;
 }
 
+.headline {
+  height: 40vh;
+  background-image: url("../images/volcano.jpg");
+  background-size: cover;
+}
+
 .container {
   margin: 0 auto;
   text-align: center;
