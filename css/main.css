@@ -104,6 +104,7 @@ p {
 
 .row {
   display: flex;
+  margin-bottom: 7.5vh;
 }
 
 .row .example ~ .example {
