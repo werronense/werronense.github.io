@@ -50,6 +50,10 @@ a img {
   box-sizing: border-box;
 }
 
+body {
+  background-color: black;
+}
+
 h1 {
   color: black;
   font-size: 3.5em;
@@ -85,7 +89,6 @@ a:hover {
 }
 
 .main-container {
-  background-color: black;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -105,6 +108,7 @@ a:hover {
   background-image: url("../images/volcano.jpg");
   background-size: cover;
   display: flex;
+  flex: auto auto 40vh;
   flex-direction: column;
   justify-content: center;
   text-align: center;
@@ -113,6 +117,15 @@ a:hover {
 .cv {
   display: flex;
   text-align: left;
+}
+
+.about {
+  flex: 1 2 auto;
+  overflow: hidden;
+}
+
+.skills {
+  flex: 2 1 auto;
 }
 
 .examples {
