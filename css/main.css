@@ -143,3 +143,8 @@ p {
 .example img {
   width: 25vw;
 }
+
+html {
+  visibility: visible;
+  opacity: 1;
+}
