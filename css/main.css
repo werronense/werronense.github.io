@@ -144,6 +144,37 @@ p {
   width: 25vw;
 }
 
+@media (max-width: 750px) {
+  h1 {
+    font-size: 3.25em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+    font-size: 1.75em;
+  }
+
+  .headline {
+    justify-content: start;
+  }
+
+  .row {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .row .example ~ .example {
+    margin-left: 0;
+  }
+
+  .example img {
+    width: 100%;
+  }
+}
+
 html {
   visibility: visible;
   opacity: 1;
