@@ -66,7 +66,7 @@ h2 {
 
 h3 {
   font-size: 2em;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.25em;
   text-decoration: none;
 }
 
@@ -94,6 +94,10 @@ p {
   line-height: 1.5;
 }
 
+a p {
+  margin-bottom: 0.25em;
+}
+
 .main-container {
   color: white;
   display: flex;
@@ -104,7 +108,7 @@ p {
 
 .row {
   display: flex;
-  margin-bottom: 7.5vh;
+  margin-bottom: 4vh;
 }
 
 .row .example ~ .example {
@@ -164,6 +168,10 @@ p {
   .row {
     flex-direction: column;
     margin-bottom: 0;
+  }
+
+  .example {
+    margin-bottom: 5vh;
   }
 
   .row .example ~ .example {
