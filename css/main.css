@@ -106,15 +106,6 @@ a p {
   width: 95vw;
 }
 
-.row {
-  display: flex;
-  margin-bottom: 4vh;
-}
-
-.row .example ~ .example {
-  margin-left: 10vw;
-}
-
 .headline {
   height: 40vh;
   background-image: url("../images/volcano.jpg");
@@ -126,28 +117,25 @@ a p {
   text-align: center;
 }
 
-.cv {
-  display: flex;
-  text-align: left;
-}
-
-.about {
-  width: 25vw;
-}
-
-.skills {
-  flex: 1;
-  margin-left: 10vw;
-}
-
+/* Examples */
 .examples {
-  flex: 1;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  margin-bottom: 20px;
+}
+
+.examples h2 {
+  grid-column: 1 / -1;
+  grid-row: 1;
 }
 
 .example img {
-  width: 25vw;
+  width: 100%;
 }
 
+
+/* Media Queries */
 @media (max-width: 750px) {
   h1 {
     font-size: 3.25em;
@@ -163,23 +151,6 @@ a p {
 
   .headline {
     justify-content: start;
-  }
-
-  .row {
-    flex-direction: column;
-    margin-bottom: 0;
-  }
-
-  .example {
-    margin-bottom: 5vh;
-  }
-
-  .row .example ~ .example {
-    margin-left: 0;
-  }
-
-  .example img {
-    width: 100%;
   }
 }
 
