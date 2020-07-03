@@ -123,6 +123,7 @@ a p {
   column-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   margin-bottom: 20px;
+  row-gap: 25px;
 }
 
 .examples h2 {
