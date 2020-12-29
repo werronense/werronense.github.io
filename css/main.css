@@ -70,7 +70,10 @@ h3 {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3,
+nav a {
   font-family: 'Montserrat', sans-serif;
   padding-top: 0.5em;
 }
@@ -115,6 +118,28 @@ a p {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+/* Navbar */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+nav li {
+  color: orange;
+  flex-basis: auto;
+  padding: 10px 0;
+}
+
+nav li + li {
+  margin-left: 10px;
+}
+
+nav li a:hover {
+  color: orange;
 }
 
 /* Examples */
