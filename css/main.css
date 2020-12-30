@@ -121,6 +121,10 @@ a p {
 }
 
 /* Navbar */
+nav {
+  margin-bottom: 20px;
+}
+
 nav ul {
   display: flex;
   flex-direction: row;
@@ -129,17 +133,32 @@ nav ul {
 }
 
 nav li {
-  color: orange;
   flex-basis: auto;
+  font-size: 20px;
   padding: 10px 0;
 }
 
 nav li + li {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
-nav li a:hover {
+.navlink {
   color: orange;
+}
+
+.current {
+  text-decoration: underline;
+}
+
+/* Publications List */
+.books,
+.articles {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.articles p {
+  margin-bottom: 15px;
 }
 
 /* Examples */
@@ -147,7 +166,7 @@ nav li a:hover {
   display: grid;
   column-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  margin-bottom: 20px;
+  margin: 20px 0;
   row-gap: 25px;
 }
 
