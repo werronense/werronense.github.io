@@ -1,62 +1,33 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, table, caption,
-tbody, tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption, footer,
-header, hgroup, menu, nav, output, ruby, section,
-summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
+:root {
+  --black: #221d23;
+  --red: #c1292e;
+  --slate: #628395;
+  --peach: #f3d8c7;
+  --white: #f7f9f9;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-strong, b {
-  font-weight: bold;
-}
-em, i {
-  font-style: italic;
-}
-a img {
-  border: none;
-}
-/* END RESET*/
 
-* {
+/* Global styles */
+html {
   box-sizing: border-box;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
-  background-color: black;
+  background-color: var(--white);
+  color: var(--black);
+  font-family: sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-  color: black;
-  font-size: 3.5em;
+  color: var(--white);
+  font-size: 4.25em;
   margin: 0 auto;
 }
 
@@ -65,9 +36,15 @@ h2 {
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   padding-bottom: 0.25em;
-  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding-top: 0.5em;
 }
 
 h1,
@@ -75,65 +52,59 @@ h2,
 h3,
 nav a {
   font-family: 'Montserrat', sans-serif;
-  padding-top: 0.5em;
 }
 
 a {
-  color: white;
+  color: var(--red);
   text-decoration: none;
 }
 
-a:visited {
-  color: orange;
-}
-
 a:hover {
-  color: maroon;
-}
-
-p {
-  font-family: sans-serif;
-  font-size: 1em;
-  line-height: 1.5;
+  text-decoration: underline;
 }
 
 a p {
   margin-bottom: 0.25em;
 }
 
-.main-container {
-  color: white;
-  display: flex;
-  flex-direction: column;
+.content-wrap {
   margin: 0 auto;
-  width: 95vw;
+  max-width: 800px;
+  padding: 60px 0;
+  width: 85%;
 }
 
-.headline {
-  height: 40vh;
-  background-image: url("../images/volcano.jpg");
-  background-size: cover;
-  display: flex;
-  flex: auto auto 40vh;
-  flex-direction: column;
-  justify-content: center;
+.divider > section {
+  border-bottom: 1px dashed var(--slate);
+  padding: 25px 0;
+}
+
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+
+/* Header */
+header {
+  background-color: var(--black);
+  color: var(--white);
   text-align: center;
 }
 
-/* Navbar */
-nav {
-  margin-bottom: 20px;
+header .content-wrap {
+  padding-bottom: 10px;
 }
 
+/* Navbar */
 nav ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   list-style: none;
+  padding: 50px 0 0 0;
 }
 
 nav li {
-  flex-basis: auto;
+  flex: 1 1 auto;
   font-size: 20px;
   padding: 10px 0;
 }
@@ -142,12 +113,74 @@ nav li + li {
   margin-left: 20px;
 }
 
-.navlink {
-  color: orange;
+nav a {
+  background-color: var(--peach);
+  color: var(--black);
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 0;
+  width: 100%;
+}
+
+nav a:hover {
+  opacity: 0.85;
+  text-decoration: none;
 }
 
 .current {
   text-decoration: underline;
+}
+
+/* Featured projects */
+.projects .btn {
+  background-color: var(--slate);
+  border-radius: 2px;
+  color: var(--white);
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+.projects .btn:hover {
+  opacity: 0.85;
+}
+
+.project-item {
+  display: flow-root;
+  overflow: hidden;
+}
+
+.project-item h3 {
+  padding-top: 0;
+}
+
+.project-item p {
+  margin-top: 0;
+}
+
+/* Work experience */
+.work-experience {
+  background-color: var(--black);
+  color: var(--white)
+}
+
+.work-experience a {
+  color: var(--peach);
+}
+
+.job-details p {
+  margin: 0;
+}
+
+/* Education */
+.education p,
+.education ul {
+  margin: 0;
+}
+
+.education section {
+  padding-bottom: 20px;
 }
 
 /* Publications List */
@@ -162,17 +195,26 @@ nav li + li {
 }
 
 /* Examples */
-.examples {
+.examples .content-wrap {
   display: grid;
   column-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  margin: 20px 0;
-  row-gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 20px 0;
+  row-gap: 40px;
 }
 
 .examples h2 {
   grid-column: 1 / -1;
   grid-row: 1;
+}
+
+.examples h3 {
+  margin: 0;
+  padding: 0 0 5px 0;
+}
+
+.examples .content-wrap {
+  padding: 20px 0 10px 0;
 }
 
 .example img {
@@ -181,21 +223,55 @@ nav li + li {
 
 
 /* Media Queries */
-@media (max-width: 750px) {
+@media screen and (min-width: 750px) {
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .job-item {
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .projects .btn {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  /* Global */
   h1 {
     font-size: 3.25em;
   }
 
   h2 {
-    font-size: 2.25em;
+    font-size: 2em;
   }
 
-  h3 {
-    font-size: 1.75em;
+  .content-wrap {
+    padding: 20px 0;
   }
 
-  .headline {
-    justify-content: start;
+  /* Header */
+  header .content-wrap {
+    padding: 20px 0 0 0;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 20px 0 1px 0;
+  }
+
+  nav li,
+  nav li + li {
+    margin: 1px 0;
+    padding: 0;
   }
 }
 
