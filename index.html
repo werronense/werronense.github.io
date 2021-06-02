@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Stephanus Werronensis me fecit. AD MMXIX-MMXX -->
+<!-- Stephanus Werronensis me fecit. AD MMXIX-MMXXI -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -15,28 +15,149 @@
   </head>
   <body>
     <div class="main-container">
-      <div class="headline container">
-        <h1>Stephen E. Werronen</h1>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="#" class="current navlink">Home</a>
-          </li>
-          <li>
-            <a href="portfolio.html" class="navlink">Web Portfolio</a>
-          </li>
-          <li>
-            <a href="publications.html" class="navlink">Writing</a>
-          </li>
-        </ul>
-      </nav>
+        <header>
+          <div class="content-wrap container">
+            <h1>Stephen E. Werronen</h1>
+
+            <nav>
+              <ul>
+                <li>
+                  <a href="#" class="current">Home</a>
+                </li>
+                <li>
+                  <a href="portfolio.html">Web Portfolio</a>
+                </li>
+                <li>
+                  <a href="publications.html">Writing</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
       <main>
-        <h2>Welcome</h2>
-        <p>
-          Hello, and welcome to my website! I wrote all the code myself. If you want to see more examples of what I can do, check out my <a href="portfolio.html" class="navlink">web portfolio</a>. If you want to know more about me as a writer, see my <a href="publications.html" class="navlink">writing portfolio<a/> for a list of publications.
-        </p>
+        <section class="projects">
+          <div class="content-wrap divider">
+            <h2>Featured Projects</h2>
+            <p>View selected projects below. More information can be found on <a href="portfolio.html">my web portfolio page</a>.</p>
+
+            <section class="project-item">
+              <img src="images/tic-tac-toe.png" alt="black and green tic-tac-toe game" width="300">
+              <h3>Tic-Tac-Toe Game</h3>
+              <p>A JavaScript tic-tac-toe game.</p>
+              <a class="btn" href="https://werronense.github.io/tic-tac-toe/" target="_blank">View project live</a>
+              <a class="btn" href="https://github.com/werronense/tic-tac-toe" target="_blank">Inspect the source code</a>
+            </section>
+
+            <section class="project-item">
+              <img src="images/snowfall.png" alt="white snowflakes on a black background" width="300">
+              <h3>Snowfall Animation</h3>
+              <p>A canvas and JavaScript simulation of snowfall.</p>
+              <a class="btn" href="https://werronense.github.io/snowfall/" target="_blank">View project live</a>
+              <a class="btn" href="https://github.com/werronense/snowfall" target="_blank">Inspect the source code</a>
+            </section>
+          </div>
+        </section>
+
+        <section class="work-experience">
+          <div class="content-wrap item-details divider">
+            <h2>Experience</h2>
+
+            <section class="job-item">
+              <div class="job-details">
+                <h3>Research Assistant</h3>
+                <p>University of Copenhagen</p>
+                <p>2018-2019</p>
+              </div>
+              <div class="job-summary">
+                <p>
+                  Research Assistant on the <a href="https://nors.ku.dk/english/research/projects/script-and-text-in-space-and-time/">'Script and Text through Space and Time'</a> project at the University of Copenhagen.
+                </p>
+                <ul>
+                  <li>
+                    Responsible for transcription and encoding of medieval documents.
+                  </li>
+                  <li>
+                    Analyzed data with Python social network analysis tools.
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="job-item">
+              <div class="job-details">
+                <h3>Visiting Researcher</h3>
+                <p>Arnamagnaean Institute</p>
+                <p>2016-2018</p>
+              </div>
+              <div class="job-summary">
+                <p>
+                  Visiting researcher at the Arnamagnaean Institute, University of Copenhagen.
+                </p>
+                <ul>
+                  <li>
+                    Wrote and published a book based on my research.
+                  </li>
+                  <li>
+                    Contributed to the research culture of the institute.
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="job-item">
+              <div class="job-details">
+                <h3>Specialist Lecturer</h3>
+                <p>University of Kent</p>
+                <p>2013-2016</p>
+              </div>
+              <div class="job-summary">
+                <p>
+                  Designed and taught courses on medieval Latin, Manuscript Studies, and History.
+                </p>
+                <ul>
+                  <li>
+                    Designed and developed 5 new courses.
+                  </li>
+                  <li>
+                    Trained and mentored teaching assistants.
+                  </li>
+                  <li>
+                    Created and maintained course webpages with the learning management system.
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="education">
+          <div class="content-wrap item-details">
+            <h2>Education</h2>
+
+            <section>
+              <h3>University of Leeds - Leeds, UK</h3>
+              <p>PhD in Medieval Studies, 2013</p>
+            </section>
+
+            <section>
+              <h3>University of Leeds - Leeds, UK</h3>
+              <p>MA in Medieval Studies, 2009</p>
+            </section>
+
+            <section>
+              <h3>Dickinson College - Carlisle, Pennsylvania</h3>
+              <p>BA in History, 2007</p>
+              <ul>
+                <li>Major: History (Europe)</li>
+                <li>Minor: Art History</li>
+              </ul>
+            </section>
+
+          </div>
+        </section>
       </main>
+
     </div>
   </body>
 </html>
