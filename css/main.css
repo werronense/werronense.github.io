@@ -2,6 +2,7 @@
   --black: #221d23;
   --red: #c1292e;
   --slate: #628395;
+  --lavender: #626a95;
   --peach: #f3d8c7;
   --white: #f7f9f9;
 }
@@ -55,7 +56,7 @@ nav a {
 }
 
 a {
-  color: var(--red);
+  color: var(--lavender);
   text-decoration: none;
 }
 
@@ -133,7 +134,7 @@ nav a:hover {
 
 /* Featured projects */
 .projects .btn {
-  background-color: var(--slate);
+  background-color: var(--lavender);
   border-radius: 2px;
   color: var(--white);
   display: inline-block;
