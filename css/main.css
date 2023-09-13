@@ -132,6 +132,12 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* About */
+.about {
+  background: var(--lavender);
+  color: var(--white);
+}
+
 /* Featured projects */
 .projects .btn {
   background-color: var(--lavender);
