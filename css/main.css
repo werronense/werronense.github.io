@@ -68,6 +68,19 @@ a p {
   margin-bottom: 0.25em;
 }
 
+figure {
+  margin: 0;
+}
+
+figure figcaption {
+  font-style: italic;
+  text-align: center;
+}
+
+iframe {
+  background: #222;
+}
+
 .content-wrap {
   margin: 0 auto;
   max-width: 800px;
@@ -248,6 +261,11 @@ nav a:hover {
     column-gap: 20px;
     display: grid;
     grid-template-columns: 1fr 2fr;
+  }
+
+  .project-feature {
+    display: flex;
+    gap: 20px;
   }
 }
 
