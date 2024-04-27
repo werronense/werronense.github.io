@@ -1,11 +1,4 @@
-:root {
-  --black: #221d23;
-  --red: #c1292e;
-  --slate: #628395;
-  --lavender: #626a95;
-  --peach: #f3d8c7;
-  --white: #f7f9f9;
-}
+@use "./partials/variables" as *;
 
 /* Global styles */
 html {
@@ -17,8 +10,8 @@ html {
 }
 
 body {
-  background-color: var(--white);
-  color: var(--black);
+  background-color: $white;
+  color: $black;
   font-family: sans-serif;
   font-size: 1em;
   line-height: 1.5;
@@ -27,7 +20,7 @@ body {
 }
 
 h1 {
-  color: var(--white);
+  color: $white;
   font-size: 4.25em;
   margin: 0 auto;
 }
@@ -56,7 +49,7 @@ nav a {
 }
 
 a {
-  color: var(--lavender);
+  color: $lavender;
   text-decoration: none;
 }
 
@@ -99,8 +92,8 @@ iframe {
 
 /* Header */
 header {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: $black;
+  color: $white;
   text-align: center;
 }
 
@@ -128,8 +121,8 @@ nav li + li {
 }
 
 nav a {
-  background-color: var(--peach);
-  color: var(--black);
+  background-color: $peach;
+  color: $black;
   display: inline-block;
   font-weight: bold;
   padding: 10px 0;
@@ -147,15 +140,15 @@ nav a:hover {
 
 /* About */
 .about {
-  background: var(--lavender);
-  color: var(--white);
+  background: $lavender;
+  color: $white;
 }
 
 /* Featured projects */
 .projects .btn {
-  background-color: var(--lavender);
+  background-color: $lavender;
   border-radius: 2px;
-  color: var(--white);
+  color: $white;
   display: inline-block;
   margin-bottom: 10px;
   padding: 8px 10px;
@@ -181,12 +174,12 @@ nav a:hover {
 
 /* Work experience */
 .work-experience {
-  background-color: var(--black);
-  color: var(--white)
+  background-color: $black;
+  color: $white
 }
 
 .work-experience a {
-  color: var(--peach);
+  color: $peach;
 }
 
 .job-details p {
