@@ -2,30 +2,47 @@
 <!-- Stephanus Werronensis me fecit. AD MMXIX-MMXXIII -->
 <html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
   <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Stephen Werronen">
-    <meta name="description"
-    content="Stephen Werronen is a web developer, digital marketer, and researcher in Vancouver, BC. Learn more about him on his website.">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Stephen Werronen | Web Developer, Digital Marketer, Researcher</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <meta property="og:title" content="Stephen Werronen's Homepage">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="Homepage for my portfolio site. See my featured projects and read more about me.">
-    <meta property="og:url" content="https://werronense.github.io/">
-    <meta name="image" property="og:image" content="https://werronense.github.io/images/homepage.jpg">
+    <meta charset="utf-8" />
+    <meta name="author" content="Stephen Werronen" />
+    <meta
+      name="description"
+      content="Stephen Werronen is a web developer, digital marketer, and researcher in Vancouver, BC. Learn more about him on his website."
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>
+      Stephen Werronen | Web Developer, Digital Marketer, Researcher
+    </title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <meta property="og:title" content="Stephen Werronen's Homepage" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Homepage for my portfolio site. See my featured projects and read more about me."
+    />
+    <meta property="og:url" content="https://werronense.github.io/" />
+    <meta
+      name="image"
+      property="og:image"
+      content="https://werronense.github.io/images/homepage.jpg"
+    />
     <link
-    href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="./styles/main.css">
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X5N4LJQ796"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-X5N4LJQ796"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-X5N4LJQ796');
+      gtag("config", "G-X5N4LJQ796");
     </script>
     <script type="application/ld+json">
       {
@@ -37,197 +54,265 @@
     </script>
   </head>
   <body>
-    <div class="main-container">
-        <header>
-          <div class="content-wrap container">
-            <h1>Stephen E. Werronen</h1>
+    <header>
+      <div class="content-wrap container">
+        <h1>Stephen E. Werronen</h1>
 
-            <nav>
+        <nav>
+          <ul>
+            <li>
+              <a href="#" class="current">Home</a>
+            </li>
+            <li>
+              <a href="portfolio.html">Web Portfolio</a>
+            </li>
+            <li>
+              <a href="publications.html">Writing</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="about">
+        <div class="content-wrap">
+          <h2>About Me</h2>
+          <p>
+            I'm a web developer, digital marketer, and researcher in Vancouver,
+            BC. I coded this website by hand to improve my skills in web
+            development and search engine optimization.
+          </p>
+        </div>
+      </section>
+
+      <section class="projects">
+        <div class="content-wrap divider">
+          <h2>Featured Projects</h2>
+          <p>
+            Here are a couple of JavaScript projects that I enjoyed making.
+            There are a lot more in
+            <a href="portfolio.html">my web development portfolio</a>.
+          </p>
+
+          <section class="project-item">
+            <img
+              src="images/tic-tac-toe.png"
+              alt="black and green tic-tac-toe game"
+              width="300"
+            />
+            <h3>Tic-Tac-Toe Game</h3>
+            <p>An unbeatable tic-tac-toe game.</p>
+            <a
+              class="btn"
+              href="https://werronense.github.io/tic-tac-toe/"
+              target="_blank"
+              >Try to win</a
+            >
+            <a class="btn" href="projects/unbeatable-tic-tac-toe.html"
+              >Read more</a
+            >
+          </section>
+
+          <section class="project-item">
+            <img
+              src="images/snowfall.png"
+              alt="white snowflakes on a black background"
+              width="300"
+            />
+            <h3>Snowfall Animation</h3>
+            <p>A canvas and JavaScript simulation of snowfall.</p>
+            <a
+              class="btn"
+              href="https://werronense.github.io/snowfall/"
+              target="_blank"
+              >Watch the snow fall</a
+            >
+            <a
+              class="btn"
+              href="https://github.com/werronense/snowfall"
+              target="_blank"
+              >Inspect the source code</a
+            >
+          </section>
+        </div>
+      </section>
+
+      <section class="work-experience">
+        <div class="content-wrap item-details divider">
+          <h2>Experience</h2>
+
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Digital Marketer</h3>
+              <p>devEdge Internet Marketing</p>
+              <p>2021-2023</p>
+            </div>
+            <div class="job-summary">
+              <h4>Search Engine Optimization (SEO)</h4>
               <ul>
                 <li>
-                  <a href="#" class="current">Home</a>
+                  Evaluate SEO performance with Google Search Console and Google
+                  Analytics
                 </li>
                 <li>
-                  <a href="portfolio.html">Web Portfolio</a>
+                  Research keywords and competitors to uncover new SEO
+                  opportunities and improvements
+                </li>
+                <li>Analyze data to discover actionable SEO opportunities</li>
+                <li>
+                  Implement schema.org structured data to improve search results
+                  for web pages
+                </li>
+                <li>Optimize web pages for speed and performance</li>
+                <li>
+                  Craft superior content to improve user experience and search
+                  rank
                 </li>
                 <li>
-                  <a href="publications.html">Writing</a>
+                  Identify and correct technical issues in HTML and metadata
+                </li>
+                <li>
+                  Advise on content marketing strategies to increase brand
+                  visibility for national and international clients
                 </li>
               </ul>
-            </nav>
-          </div>
-        </header>
 
-      <main>
-        <section class="about">
-          <div class="content-wrap">
-            <h2>About Me</h2>
-            <p>I'm a web developer, digital marketer, and researcher in Vancouver, BC. I coded this website by hand to improve my skills in web development and search engine optimization.</p>
-          </div>
-        </section>
-
-        <section class="projects">
-          <div class="content-wrap divider">
-            <h2>Featured Projects</h2>
-            <p>Here are a couple of JavaScript projects that I enjoyed making. There are a lot more in <a href="portfolio.html">my web development portfolio</a>.</p>
-
-            <section class="project-item">
-              <img src="images/tic-tac-toe.png" alt="black and green tic-tac-toe game" width="300">
-              <h3>Tic-Tac-Toe Game</h3>
-              <p>An unbeatable tic-tac-toe game.</p>
-              <a class="btn" href="https://werronense.github.io/tic-tac-toe/" target="_blank">Try to win</a>
-              <a class="btn" href="projects/unbeatable-tic-tac-toe.html">Read more</a>
-            </section>
-
-            <section class="project-item">
-              <img src="images/snowfall.png" alt="white snowflakes on a black background" width="300">
-              <h3>Snowfall Animation</h3>
-              <p>A canvas and JavaScript simulation of snowfall.</p>
-              <a class="btn" href="https://werronense.github.io/snowfall/" target="_blank">Watch the snow fall</a>
-              <a class="btn" href="https://github.com/werronense/snowfall" target="_blank">Inspect the source code</a>
-            </section>
-          </div>
-        </section>
-
-        <section class="work-experience">
-          <div class="content-wrap item-details divider">
-            <h2>Experience</h2>
-
-            <section class="job-item">
-              <div class="job-details">
-                <h3>Digital Marketer</h3>
-                <p>devEdge Internet Marketing</p>
-                <p>2021-2023</p>
-              </div>
-              <div class="job-summary">
-                <h4>Search Engine Optimization (SEO)</h4>
-                <ul>
-                  <li>Evaluate SEO performance with Google Search Console and Google Analytics</li>
-                  <li>Research keywords and competitors to uncover new SEO opportunities and improvements</li>
-                  <li>Analyze data to discover actionable SEO opportunities</li>
-                  <li>Implement schema.org structured data to improve search results for web pages</li>
-                  <li>Optimize web pages for speed and performance</li>
-                  <li>Craft superior content to improve user experience and search rank</li>
-                  <li>Identify and correct technical issues in HTML and metadata</li>
-                  <li>Advise on content marketing strategies to increase brand visibility for national and international clients</li>
-                </ul>
-
-                <h4>Search Engine Marketing (SEM)</h4>
-                <ul>
-                  <li>Manage a dozen Google Ads accounts to maximize return on investment for clients</li>
-                  <li>Enhance ad performance with insights gleaned from data analysis</li>
-                </ul>
-
-                <h4>Social Media Marketing (SMM)</h4>
-                <ul>
-                  <li>Generate ad concepts and creative assets that connect with the right audience</li>
-                  <li>Research targeting options to identify the best audiences for awareness and remarketing campaigns</li>
-                </ul>
-
-                <h4>Web Development</h4>
-                <ul>
-                  <li>Customize websites to meet client specifications, including responding to feedback and revision requests</li>
-                  <li>Optimize websites to perform well on all device types and screen sizes</li>
-                  <li>Implement best practices for SEO and web accessibility by updating website source code</li>
-                </ul>
-              </div>
-            </section>
-
-            <section class="job-item">
-              <div class="job-details">
-                <h3>Research Assistant</h3>
-                <p>University of Copenhagen</p>
-                <p>2018-2019</p>
-              </div>
-              <div class="job-summary">
-                <p>
-                  Research Assistant on the <a href="https://nors.ku.dk/english/research/projects/script-and-text-in-space-and-time/">'Script and Text through Space and Time'</a> project at the University of Copenhagen.
-                </p>
-                <ul>
-                  <li>
-                    Responsible for transcription and encoding of medieval documents.
-                  </li>
-                  <li>
-                    Analyzed data with Python social network analysis tools.
-                  </li>
-                </ul>
-              </div>
-            </section>
-
-            <section class="job-item">
-              <div class="job-details">
-                <h3>Visiting Researcher</h3>
-                <p>Arnamagnaean Institute</p>
-                <p>2016-2018</p>
-              </div>
-              <div class="job-summary">
-                <p>
-                  Visiting researcher at the Arnamagnaean Institute, University of Copenhagen.
-                </p>
-                <ul>
-                  <li>
-                    Wrote and published a book based on my research.
-                  </li>
-                  <li>
-                    Contributed to the research culture of the institute.
-                  </li>
-                </ul>
-              </div>
-            </section>
-
-            <section class="job-item">
-              <div class="job-details">
-                <h3>Specialist Lecturer</h3>
-                <p>University of Kent</p>
-                <p>2013-2016</p>
-              </div>
-              <div class="job-summary">
-                <p>
-                  Designed and taught courses on medieval Latin, Manuscript Studies, and History.
-                </p>
-                <ul>
-                  <li>
-                    Designed and developed 5 new courses.
-                  </li>
-                  <li>
-                    Trained and mentored teaching assistants.
-                  </li>
-                  <li>
-                    Created and maintained course webpages with the learning management system.
-                  </li>
-                </ul>
-              </div>
-            </section>
-          </div>
-        </section>
-
-        <section class="education">
-          <div class="content-wrap item-details">
-            <h2>Education</h2>
-
-            <section>
-              <h3>University of Leeds - Leeds, UK</h3>
-              <p>PhD in Medieval Studies, 2013</p>
-            </section>
-
-            <section>
-              <h3>University of Leeds - Leeds, UK</h3>
-              <p>MA in Medieval Studies, 2009</p>
-            </section>
-
-            <section>
-              <h3>Dickinson College - Carlisle, Pennsylvania</h3>
-              <p>BA in History, 2007</p>
+              <h4>Search Engine Marketing (SEM)</h4>
               <ul>
-                <li>Major: History (Europe)</li>
-                <li>Minor: Art History</li>
+                <li>
+                  Manage a dozen Google Ads accounts to maximize return on
+                  investment for clients
+                </li>
+                <li>
+                  Enhance ad performance with insights gleaned from data
+                  analysis
+                </li>
               </ul>
-            </section>
 
-          </div>
-        </section>
-      </main>
+              <h4>Social Media Marketing (SMM)</h4>
+              <ul>
+                <li>
+                  Generate ad concepts and creative assets that connect with the
+                  right audience
+                </li>
+                <li>
+                  Research targeting options to identify the best audiences for
+                  awareness and remarketing campaigns
+                </li>
+              </ul>
 
-    </div>
+              <h4>Web Development</h4>
+              <ul>
+                <li>
+                  Customize websites to meet client specifications, including
+                  responding to feedback and revision requests
+                </li>
+                <li>
+                  Optimize websites to perform well on all device types and
+                  screen sizes
+                </li>
+                <li>
+                  Implement best practices for SEO and web accessibility by
+                  updating website source code
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Research Assistant</h3>
+              <p>University of Copenhagen</p>
+              <p>2018-2019</p>
+            </div>
+            <div class="job-summary">
+              <p>
+                Research Assistant on the
+                <a
+                  href="https://nors.ku.dk/english/research/projects/script-and-text-in-space-and-time/"
+                  >'Script and Text through Space and Time'</a
+                >
+                project at the University of Copenhagen.
+              </p>
+              <ul>
+                <li>
+                  Responsible for transcription and encoding of medieval
+                  documents.
+                </li>
+                <li>
+                  Analyzed data with Python social network analysis tools.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Visiting Researcher</h3>
+              <p>Arnamagnaean Institute</p>
+              <p>2016-2018</p>
+            </div>
+            <div class="job-summary">
+              <p>
+                Visiting researcher at the Arnamagnaean Institute, University of
+                Copenhagen.
+              </p>
+              <ul>
+                <li>Wrote and published a book based on my research.</li>
+                <li>Contributed to the research culture of the institute.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Specialist Lecturer</h3>
+              <p>University of Kent</p>
+              <p>2013-2016</p>
+            </div>
+            <div class="job-summary">
+              <p>
+                Designed and taught courses on medieval Latin, Manuscript
+                Studies, and History.
+              </p>
+              <ul>
+                <li>Designed and developed 5 new courses.</li>
+                <li>Trained and mentored teaching assistants.</li>
+                <li>
+                  Created and maintained course webpages with the learning
+                  management system.
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="education">
+        <div class="content-wrap item-details">
+          <h2>Education</h2>
+
+          <section>
+            <h3>University of Leeds - Leeds, UK</h3>
+            <p>PhD in Medieval Studies, 2013</p>
+          </section>
+
+          <section>
+            <h3>University of Leeds - Leeds, UK</h3>
+            <p>MA in Medieval Studies, 2009</p>
+          </section>
+
+          <section>
+            <h3>Dickinson College - Carlisle, Pennsylvania</h3>
+            <p>BA in History, 2007</p>
+            <ul>
+              <li>Major: History (Europe)</li>
+              <li>Minor: Art History</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
