@@ -1,4 +1,5 @@
 @use "./partials/variables" as *;
+@use "./partials/nav" as *;
 
 /* Global styles */
 html {
@@ -99,43 +100,6 @@ header {
 
 header .content-wrap {
   padding-bottom: 10px;
-}
-
-/* Navbar */
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  list-style: none;
-  padding: 50px 0 0 0;
-}
-
-nav li {
-  flex: 1 1 auto;
-  font-size: 20px;
-  padding: 10px 0;
-}
-
-nav li + li {
-  margin-left: 20px;
-}
-
-nav a {
-  background-color: $peach;
-  color: $black;
-  display: inline-block;
-  font-weight: bold;
-  padding: 10px 0;
-  width: 100%;
-}
-
-nav a:hover {
-  opacity: 0.85;
-  text-decoration: none;
-}
-
-.current {
-  text-decoration: underline;
 }
 
 /* About */

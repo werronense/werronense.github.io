@@ -1,0 +1,39 @@
+@use "./variables" as *;
+
+.nav {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 50px 0 0 0;
+  }
+
+  &__list-item {
+    flex: 1 1 auto;
+    font-size: 20px;
+    padding: 10px 0;
+
+    & + * {
+      margin-left: 20px;
+    }
+  }
+
+  &__link {
+    background-color: $peach;
+    color: $black;
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 0;
+    width: 100%;
+
+    &--current {
+      text-decoration: underline;
+    }
+
+    &:hover {
+      opacity: 0.85;
+      text-decoration: none;
+    }
+  }
+}
