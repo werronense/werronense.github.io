@@ -1,4 +1,5 @@
 .nav__list {
+  align-items: normal;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
