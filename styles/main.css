@@ -1,9 +1,43 @@
+.nav__list {
+  align-items: normal;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 50px 0 0 0;
+}
+.nav__list-item {
+  flex: 1 1 auto;
+  font-size: 20px;
+  padding: 10px 0;
+}
+.nav__list-item + * {
+  margin-left: 20px;
+}
+.nav__link {
+  background-color: #f3d8c7;
+  color: #221d23;
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 0;
+  width: 100%;
+}
+.nav__link--current {
+  text-decoration: underline;
+}
+.nav__link:hover {
+  opacity: 0.85;
+  text-decoration: none;
+}
+
 /* Global styles */
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -80,8 +114,8 @@ iframe {
 }
 
 .divider > section {
-  border-bottom: 1px dashed var(--slate);
-  padding: 25px 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .divider > section:last-of-type {
@@ -99,43 +133,6 @@ header .content-wrap {
   padding-bottom: 10px;
 }
 
-/* Navbar */
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  list-style: none;
-  padding: 50px 0 0 0;
-}
-
-nav li {
-  flex: 1 1 auto;
-  font-size: 20px;
-  padding: 10px 0;
-}
-
-nav li + li {
-  margin-left: 20px;
-}
-
-nav a {
-  background-color: #f3d8c7;
-  color: #221d23;
-  display: inline-block;
-  font-weight: bold;
-  padding: 10px 0;
-  width: 100%;
-}
-
-nav a:hover {
-  opacity: 0.85;
-  text-decoration: none;
-}
-
-.current {
-  text-decoration: underline;
-}
-
 /* About */
 .about {
   background: #626a95;
@@ -143,6 +140,16 @@ nav a:hover {
 }
 
 /* Featured projects */
+.projects__image {
+  box-shadow: 0 0 5px #bbb;
+  max-width: 100%;
+}
+@media (min-width: 1280px) {
+  .projects__image {
+    min-width: 300px;
+  }
+}
+
 .projects .btn {
   background-color: #626a95;
   border-radius: 2px;
@@ -157,9 +164,16 @@ nav a:hover {
   opacity: 0.85;
 }
 
-.project-item {
-  display: flow-root;
-  overflow: hidden;
+@media (min-width: 1280px) {
+  .project-item {
+    align-items: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    gap: 36px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 .project-item h3 {
@@ -242,10 +256,6 @@ nav a:hover {
 
 /* Media Queries */
 @media screen and (min-width: 750px) {
-  .project-item img {
-    float: left;
-    margin-right: 20px;
-  }
   .job-item {
     -moz-column-gap: 20px;
          column-gap: 20px;
