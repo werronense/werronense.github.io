@@ -112,8 +112,8 @@ iframe {
 }
 
 .divider > section {
-  border-bottom: 1px dashed var(--slate);
-  padding: 25px 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .divider > section:last-of-type {
@@ -138,6 +138,11 @@ header .content-wrap {
 }
 
 /* Featured projects */
+.projects__image {
+  box-shadow: 0 0 5px #bbb;
+  max-width: 100%;
+}
+
 .projects .btn {
   background-color: #626a95;
   border-radius: 2px;
@@ -155,6 +160,8 @@ header .content-wrap {
 .project-item {
   display: flow-root;
   overflow: hidden;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .project-item h3 {

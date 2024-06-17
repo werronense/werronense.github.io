@@ -64,7 +64,9 @@
               <a href="#" class="nav__link nav__link--current">Home</a>
             </li>
             <li class="nav__list-item">
-              <a href="./pages/portfolio.html" class="nav__link">Web Portfolio</a>
+              <a href="./pages/portfolio.html" class="nav__link"
+                >Web Portfolio</a
+              >
             </li>
             <li class="nav__list-item">
               <a href="./pages/research.html" class="nav__link">Research</a>
@@ -90,49 +92,64 @@
         <div class="content-wrap divider">
           <h2>Featured Projects</h2>
           <p>
-            Here are a couple of JavaScript projects that I enjoyed making.
-            There are a lot more in
+            Here are a couple of projects I'm proud of. There are a lot more in
             <a href="portfolio.html">my web development portfolio</a>.
           </p>
 
           <section class="project-item">
             <img
-              src="images/tic-tac-toe.png"
-              alt="black and green tic-tac-toe game"
+              class="projects__image"
+              src="images/byte-sized-paleography.png"
+              alt="A game that teaches you how to read medieval handwriting."
               width="300"
             />
-            <h3>Tic-Tac-Toe Game</h3>
-            <p>An unbeatable tic-tac-toe game.</p>
+            <h3>Byte-Sized Medieval Paleography</h3>
+            <p>I made a game that teaches you how to read medieval handwriting.</p>
+            <p>It's a full-stack application built with React, Express, and MySQL.</p>
             <a
               class="btn"
-              href="https://werronense.github.io/tic-tac-toe/"
+              href="https://byte-sized-paleography-demo.netlify.app/play"
               target="_blank"
-              >Try to win</a
+              >Try it out</a
             >
-            <a class="btn" href="projects/unbeatable-tic-tac-toe.html"
-              >Read more</a
+            <a
+              class="btn"
+              href="https://github.com/werronense/byte-sized-paleography"
+              target="_blank"
+              >See the source code</a
             >
           </section>
 
           <section class="project-item">
             <img
-              src="images/snowfall.png"
-              alt="white snowflakes on a black background"
+              class="projects__image"
+              src="images/telus-solution.png"
+              alt="Presentation slide showcasing the show and movie finding app."
               width="300"
             />
-            <h3>Snowfall Animation</h3>
-            <p>A canvas and JavaScript simulation of snowfall.</p>
+            <h3>Industry Project Hackathon</h3>
+            <p>Our team made an app to help people find out what streaming service has the show or movie they want to watch.</p>
+            <p>In 24 hours we built a working full-stack prototype using React, Express, and MySQL.</p>
+            <p>My amazing teammates on this project were:</p>
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/julia-kim-seo-hyeon/" target="_blank">Julia Kim</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/jacobkochatkov/" target="_blank">Jacob Kotchakov</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/sungwoo-andrew-chun/" target="_blank">Andrew Chun</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/martishyn/" target="_blank">Alex Martishyn</a>
+              </li>
+            </ul>
             <a
               class="btn"
-              href="https://werronense.github.io/snowfall/"
+              href="https://github.com/werronense/telus-project-frontend"
               target="_blank"
-              >Watch the snow fall</a
-            >
-            <a
-              class="btn"
-              href="https://github.com/werronense/snowfall"
-              target="_blank"
-              >Inspect the source code</a
+              >Read more on GitHub</a
             >
           </section>
         </div>
@@ -295,21 +312,29 @@
 
           <article class="education__details">
             <h3 class="education__subheading">BrainStation - Vancouver, BC</h3>
-            <p class="education__degree">Diploma Candidate in Web Development, 2024</p>
+            <p class="education__degree">
+              Diploma Candidate in Web Development, 2024
+            </p>
           </article>
 
           <article class="education__details">
-            <h3 class="education__subheading">University of Leeds - Leeds, UK</h3>
+            <h3 class="education__subheading">
+              University of Leeds - Leeds, UK
+            </h3>
             <p class="education__degree">PhD in Medieval Studies, 2013</p>
           </article>
 
           <article class="education__details">
-            <h3 class="education__subheading">University of Leeds - Leeds, UK</h3>
+            <h3 class="education__subheading">
+              University of Leeds - Leeds, UK
+            </h3>
             <p class="education__degree">MA in Medieval Studies, 2009</p>
           </article>
 
           <article class="education__details">
-            <h3 class="education__subheading">Dickinson College - Carlisle, Pennsylvania</h3>
+            <h3 class="education__subheading">
+              Dickinson College - Carlisle, Pennsylvania
+            </h3>
             <p class="education__degree">BA in History, 2007</p>
             <ul class="education__subject-list">
               <li class="education__subject">Major: History (Europe)</li>
