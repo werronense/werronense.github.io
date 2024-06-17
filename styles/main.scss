@@ -1,12 +1,16 @@
 @use "./partials/variables" as *;
+@use "./partials/media-queries" as *;
 @use "./partials/nav" as *;
+@use "./partials/flex" as *;
 
 /* Global styles */
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -46,7 +50,7 @@ h1,
 h2,
 h3,
 nav a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -83,8 +87,8 @@ iframe {
 }
 
 .divider > section {
-  border-bottom: 1px dashed var(--slate);
-  padding: 25px 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .divider > section:last-of-type {
@@ -109,6 +113,17 @@ header .content-wrap {
 }
 
 /* Featured projects */
+.projects {
+  &__image {
+    box-shadow: 0 0 5px #bbb;
+    max-width: 100%;
+
+    @include desktop {
+      min-width: 300px;
+    }
+  }
+}
+
 .projects .btn {
   background-color: $lavender;
   border-radius: 2px;
@@ -124,8 +139,14 @@ header .content-wrap {
 }
 
 .project-item {
-  display: flow-root;
-  overflow: hidden;
+  // display: flow-root;
+  // overflow: hidden;
+  @include desktop {
+    @include flex;
+    gap: 36px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 .project-item h3 {
@@ -139,7 +160,7 @@ header .content-wrap {
 /* Work experience */
 .work-experience {
   background-color: $black;
-  color: $white
+  color: $white;
 }
 
 .work-experience a {
@@ -206,13 +227,12 @@ header .content-wrap {
   width: 100%;
 }
 
-
 /* Media Queries */
 @media screen and (min-width: 750px) {
-  .project-item img {
-    float: left;
-    margin-right: 20px;
-  }
+  // .project-item img {
+  //   float: left;
+  //   margin-right: 20px;
+  // }
 
   .job-item {
     column-gap: 20px;

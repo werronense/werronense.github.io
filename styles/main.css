@@ -35,7 +35,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -112,8 +114,8 @@ iframe {
 }
 
 .divider > section {
-  border-bottom: 1px dashed var(--slate);
-  padding: 25px 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .divider > section:last-of-type {
@@ -138,6 +140,16 @@ header .content-wrap {
 }
 
 /* Featured projects */
+.projects__image {
+  box-shadow: 0 0 5px #bbb;
+  max-width: 100%;
+}
+@media (min-width: 1280px) {
+  .projects__image {
+    min-width: 300px;
+  }
+}
+
 .projects .btn {
   background-color: #626a95;
   border-radius: 2px;
@@ -152,9 +164,16 @@ header .content-wrap {
   opacity: 0.85;
 }
 
-.project-item {
-  display: flow-root;
-  overflow: hidden;
+@media (min-width: 1280px) {
+  .project-item {
+    align-items: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    gap: 36px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 .project-item h3 {
@@ -237,10 +256,6 @@ header .content-wrap {
 
 /* Media Queries */
 @media screen and (min-width: 750px) {
-  .project-item img {
-    float: left;
-    margin-right: 20px;
-  }
   .job-item {
     -moz-column-gap: 20px;
          column-gap: 20px;
