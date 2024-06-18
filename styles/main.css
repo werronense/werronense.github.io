@@ -1,3 +1,7 @@
+.bold {
+  font-weight: 700;
+}
+
 .nav__list {
   align-items: normal;
   display: flex;
@@ -199,13 +203,14 @@ header .content-wrap {
 }
 
 /* Education */
-.education p,
-.education ul {
-  margin: 0;
+.education__details {
+  margin-top: 2.25rem;
 }
-
-.education section {
-  padding-bottom: 20px;
+.education__text {
+  margin: 0.5rem 0;
+}
+.education__subject-list {
+  margin: 0;
 }
 
 /* Publications List */
