@@ -204,19 +204,13 @@ header .content-wrap {
 
 /* Education */
 .education__details {
-  margin-top: 2.5rem;
+  margin-top: 2.25rem;
 }
-
-.education p {
+.education__text {
   margin: 0.5rem 0;
 }
-
-.education ul {
+.education__subject-list {
   margin: 0;
-}
-
-.education section {
-  padding-bottom: 20px;
 }
 
 /* Publications List */

@@ -175,20 +175,16 @@ header .content-wrap {
 /* Education */
 .education {
   &__details {
-    margin-top: 2.5rem;
+    margin-top: 2.25rem;
   }
-}
 
-.education p {
-  margin: 0.5rem 0;
-}
+  &__text {
+    margin: 0.5rem 0;
+  }
 
-.education ul {
-  margin: 0;
-}
-
-.education section {
-  padding-bottom: 20px;
+  &__subject-list {
+    margin: 0;
+  }
 }
 
 /* Publications List */
