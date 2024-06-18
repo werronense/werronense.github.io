@@ -1,3 +1,7 @@
+.bold {
+  font-weight: 700;
+}
+
 .nav__list {
   align-items: normal;
   display: flex;
@@ -199,7 +203,14 @@ header .content-wrap {
 }
 
 /* Education */
-.education p,
+.education__details {
+  margin-top: 2.5rem;
+}
+
+.education p {
+  margin: 0.5rem 0;
+}
+
 .education ul {
   margin: 0;
 }
