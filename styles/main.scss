@@ -233,6 +233,61 @@ header .content-wrap {
   width: 100%;
 }
 
+/* Highlights */
+.highlights {
+  &__heading {
+    margin: 0;
+    padding: 0 0 5px 0;
+  }
+
+  &__article {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 30px 0 60px 0;
+    width: 85%;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
+
+  &__content {
+    @include tablet {
+      @include flex;
+      gap: 1.5rem;
+      margin-top: 0.75rem;
+    }
+
+    @include desktop {
+      gap: 2rem;
+    }
+  }
+
+  &__group {
+    @include tablet {
+      @include flex($direction: column);
+    }
+  }
+
+  &__image {
+    max-width: 300px;
+  }
+
+  &__text {
+    margin: 0.5rem 0;
+
+    @include tablet {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__tech-stack-list {
+    margin: 0.5rem 0;
+  }
+}
+
 /* Media Queries */
 @media screen and (min-width: 750px) {
   // .project-item img {
