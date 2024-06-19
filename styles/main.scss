@@ -233,6 +233,82 @@ header .content-wrap {
   width: 100%;
 }
 
+/* Highlights */
+.highlights {
+  padding: 0 1.5rem;
+
+  @include tablet {
+    padding: 0;
+  }
+
+  &__heading {
+    margin: 0 0.5rem;
+    padding: 0 0 5px 0;
+  }
+
+  &__article {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 30px 0 60px 0;
+
+    @include tablet {
+      width: 85%;
+    }
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
+
+  &__content {
+    @include tablet {
+      @include flex;
+      gap: 1.5rem;
+      margin-top: 0.75rem;
+    }
+
+    @include desktop {
+      gap: 2rem;
+    }
+  }
+
+  &__group {
+    padding: 0.5rem;
+
+    @include tablet {
+      @include flex($direction: column);
+    }
+  }
+
+  &__image {
+    box-shadow: 0 0 5px #bbb;
+    max-width: 300px;
+    width: 100%;
+
+    @include tablet {
+      width: 300px;
+    }
+  }
+
+  &__link {
+    margin-top: 1rem;
+  }
+
+  &__text {
+    margin: 0.5rem 0;
+
+    @include tablet {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__tech-stack-list {
+    margin: 0.5rem 0;
+  }
+}
+
 /* Media Queries */
 @media screen and (min-width: 750px) {
   // .project-item img {
