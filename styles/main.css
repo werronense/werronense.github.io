@@ -260,6 +260,14 @@ header .content-wrap {
 }
 
 /* Highlights */
+.highlights {
+  padding: 0 1.5rem;
+}
+@media (min-width: 750px) {
+  .highlights {
+    padding: 0;
+  }
+}
 .highlights__heading {
   margin: 0 0.5rem;
   padding: 0 0 5px 0;
@@ -306,6 +314,12 @@ header .content-wrap {
 .highlights__image {
   box-shadow: 0 0 5px #bbb;
   max-width: 300px;
+  width: 100%;
+}
+@media (min-width: 750px) {
+  .highlights__image {
+    width: 300px;
+  }
 }
 .highlights__link {
   margin-top: 1rem;
