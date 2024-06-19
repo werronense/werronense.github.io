@@ -236,7 +236,7 @@ header .content-wrap {
 /* Highlights */
 .highlights {
   &__heading {
-    margin: 0;
+    margin: 0 0.5rem;
     padding: 0 0 5px 0;
   }
 
@@ -244,7 +244,10 @@ header .content-wrap {
     margin: 0 auto;
     max-width: 800px;
     padding: 30px 0 60px 0;
-    width: 85%;
+
+    @include tablet {
+      width: 85%;
+    }
 
     &:last-of-type {
       padding-bottom: 0;
@@ -264,13 +267,20 @@ header .content-wrap {
   }
 
   &__group {
+    padding: 0.5rem;
+
     @include tablet {
       @include flex($direction: column);
     }
   }
 
   &__image {
+    box-shadow: 0 0 5px #bbb;
     max-width: 300px;
+  }
+
+  &__link {
+    margin-top: 1rem;
   }
 
   &__text {
