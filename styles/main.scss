@@ -27,8 +27,12 @@ body {
 
 h1 {
   color: $white;
-  font-size: 4.25em;
+  font-size: 2.5em;
   margin: 0 auto;
+
+  @include desktop {
+    font-size: 4.25rem;
+  }
 }
 
 h2 {
@@ -140,8 +144,6 @@ header .content-wrap {
 }
 
 .project-item {
-  // display: flow-root;
-  // overflow: hidden;
   @include desktop {
     @include flex;
     gap: 36px;
@@ -210,11 +212,6 @@ header .content-wrap {
   padding: 20px 0;
   row-gap: 40px;
 }
-
-/* .examples h2 {
-  grid-column: 1 / -1;
-  grid-row: 1;
-} */
 
 .examples h3 {
   margin: 0;
@@ -311,11 +308,6 @@ header .content-wrap {
 
 /* Media Queries */
 @media screen and (min-width: 750px) {
-  // .project-item img {
-  //   float: left;
-  //   margin-right: 20px;
-  // }
-
   .job-item {
     column-gap: 20px;
     display: grid;
@@ -337,9 +329,9 @@ header .content-wrap {
 
 @media screen and (max-width: 775px) {
   /* Global */
-  h1 {
-    font-size: 3.25em;
-  }
+  // h1 {
+  //   font-size: 3.25em;
+  // }
 
   h2 {
     font-size: 2em;
@@ -353,17 +345,6 @@ header .content-wrap {
   header .content-wrap {
     padding: 20px 0 0 0;
     width: 100%;
-  }
-
-  nav ul {
-    flex-direction: column;
-    padding: 20px 0 1px 0;
-  }
-
-  nav li,
-  nav li + li {
-    margin: 1px 0;
-    padding: 0;
   }
 }
 

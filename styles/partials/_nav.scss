@@ -1,21 +1,36 @@
 @use "./variables" as *;
+@use "./media-queries" as *;
 @use "./flex" as *;
 
 .nav {
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  width: 85%;
+
+  @include desktop {
+    padding-bottom: 2rem;
+  }
+
   &__list {
-    @include flex($justify: flex-start);
+    @include flex($justify: flex-start, $direction: column);
     list-style: none;
+    margin: 0;
     padding: 50px 0 0 0;
+
+    @include tablet {
+      flex-direction: row;
+      gap: 1rem;
+    }
+
+    @include desktop {
+      gap: 2rem;
+    }
   }
 
   &__list-item {
     flex: 1 1 auto;
     font-size: 20px;
     padding: 10px 0;
-
-    & + * {
-      margin-left: 20px;
-    }
   }
 
   &__link {
