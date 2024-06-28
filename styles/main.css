@@ -257,10 +257,6 @@ header .content-wrap {
   row-gap: 40px;
 }
 
-/* .examples h2 {
-  grid-column: 1 / -1;
-  grid-row: 1;
-} */
 .examples h3 {
   margin: 0;
   padding: 0 0 5px 0;
