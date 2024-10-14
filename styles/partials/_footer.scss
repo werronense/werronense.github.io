@@ -1,0 +1,49 @@
+@use "./variables" as *;
+@use "./media-queries" as *;
+@use "./flex" as *;
+
+.footer {
+  background-color: $black;
+  color: $white;
+  padding: 1rem 0.75rem;
+
+  @include tablet {
+    padding: 1.5rem 0;
+  }
+
+  &__container {
+    @include flex;
+    gap: 1rem;
+    justify-content: space-between;
+
+    @include tablet {
+      margin: 0 auto;
+      max-width: 820px;
+      width: 90%;
+    }
+  }
+
+  &__group {
+    @include flex($align: center);
+    gap: 0.75rem;
+
+    &--right {
+      justify-content: flex-end;
+
+      @include tablet {
+        gap: 1.5rem;
+      }
+    }
+  }
+
+  &__text {
+    @include tablet {
+      font-size: 0.9rem;
+    }
+  }
+
+  &__icon {
+    color: $white;
+    height: 1.5rem;
+  }
+}
