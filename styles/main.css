@@ -2,24 +2,56 @@
   font-weight: 700;
 }
 
+.header {
+  padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+}
+@media (min-width: 750px) {
+  .header__container {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 90%;
+  }
+}
+
 .nav {
   margin: 0 auto;
-  padding-bottom: 1rem;
-  width: 85%;
 }
-@media (min-width: 1280px) {
-  .nav {
-    padding-bottom: 2rem;
+.nav__group {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.nav__brand-link {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  gap: 0.5rem;
+}
+.nav__brand-link:hover {
+  text-decoration: none;
+}
+.nav__header {
+  color: #f7f9f9;
+  font-size: 1rem;
+  padding: 0 0 0.25rem 0;
+}
+@media (min-width: 750px) {
+  .nav__header {
+    padding-bottom: 0.5rem;
   }
 }
 .nav__list {
   align-items: normal;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 0.75rem;
   list-style: none;
   margin: 0;
-  padding: 50px 0 0 0;
+  padding: 0;
 }
 @media (min-width: 750px) {
   .nav__list {
@@ -32,25 +64,21 @@
     gap: 2rem;
   }
 }
-.nav__list-item {
-  flex: 1 1 auto;
-  font-size: 20px;
-  padding: 10px 0;
+.nav__list--icons {
+  align-items: flex-end;
 }
 .nav__link {
-  background-color: #f3d8c7;
-  color: #221d23;
-  display: inline-block;
+  color: #f3d8c7;
   font-weight: bold;
-  padding: 10px 0;
+  padding: 0.5rem 0.25rem;
   width: 100%;
 }
 .nav__link--current {
   text-decoration: underline;
 }
-.nav__link:hover {
-  opacity: 0.85;
-  text-decoration: none;
+.nav__icon {
+  color: #f7f9f9;
+  height: 1.5rem;
 }
 
 .footer {
