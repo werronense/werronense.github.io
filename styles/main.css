@@ -152,26 +152,6 @@ body {
   padding: 0;
 }
 
-h1 {
-  color: #f7f9f9;
-  font-size: 2.5em;
-  margin: 0 auto;
-}
-@media (min-width: 1280px) {
-  h1 {
-    font-size: 4.25rem;
-  }
-}
-
-h2 {
-  font-size: 2.5em;
-}
-
-h3 {
-  font-size: 1.5em;
-  padding-bottom: 0.25em;
-}
-
 h1,
 h2,
 h3 {
@@ -184,6 +164,26 @@ h2,
 h3,
 nav a {
   font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  color: #f7f9f9;
+  font-size: 2em;
+  margin: 0 auto 1em auto;
+}
+@media (min-width: 1280px) {
+  h1 {
+    font-size: 4.25rem;
+  }
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+  padding-bottom: 0.25em;
 }
 
 a {
@@ -243,6 +243,27 @@ header .content-wrap {
 .summary {
   background: #626a95;
   color: #f7f9f9;
+}
+@media (min-width: 750px) {
+  .summary__content {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    gap: 2em;
+  }
+}
+.summary__portrait-container {
+  align-items: normal;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.summary__portrait {
+  border-radius: 50%;
+  box-shadow: 0 0 2px 0 #628395;
+  height: 225px;
+  width: 225px;
 }
 
 /* Featured projects */
@@ -304,6 +325,10 @@ header .content-wrap {
   margin: 0;
 }
 
+.job-summary__list {
+  padding-left: 1rem;
+}
+
 /* Education */
 .education__details {
   margin-top: 2.25rem;
@@ -311,7 +336,7 @@ header .content-wrap {
 .education__text {
   margin: 0.5rem 0;
 }
-.education__subject-list {
+.education__list {
   margin: 0;
 }
 
@@ -454,10 +479,6 @@ header .content-wrap {
   }
 }
 @media screen and (max-width: 775px) {
-  /* Global */
-  h2 {
-    font-size: 2em;
-  }
   .content-wrap {
     padding: 20px 0;
   }

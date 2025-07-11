@@ -27,25 +27,6 @@ body {
   padding: 0;
 }
 
-h1 {
-  color: $white;
-  font-size: 2.5em;
-  margin: 0 auto;
-
-  @include desktop {
-    font-size: 4.25rem;
-  }
-}
-
-h2 {
-  font-size: 2.5em;
-}
-
-h3 {
-  font-size: 1.5em;
-  padding-bottom: 0.25em;
-}
-
 h1,
 h2,
 h3 {
@@ -59,6 +40,26 @@ h3,
 nav a {
   font-family: "Montserrat", sans-serif;
 }
+
+h1 {
+  color: $white;
+  font-size: 2em;
+  margin: 0 auto 1em auto;
+
+  @include desktop {
+    font-size: 4.25rem;
+  }
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+  padding-bottom: 0.25em;
+}
+
 
 a {
   color: $lavender;
@@ -117,6 +118,24 @@ header .content-wrap {
 .summary {
   background: $lavender;
   color: $white;
+
+  &__content {
+    @include tablet {
+      @include flex($align: center);
+      gap: 2em;
+    }
+  }
+
+  &__portrait-container {
+    @include flex($justify: center);
+  }
+
+  &__portrait {
+    border-radius: 50%;
+    box-shadow: 0 0 2px 0 $slate;
+    height: 225px;
+    width: 225px;
+  }
 }
 
 /* Featured projects */
@@ -176,6 +195,12 @@ header .content-wrap {
   margin: 0;
 }
 
+.job-summary {
+  &__list {
+    padding-left: 1rem;
+  }
+}
+
 /* Education */
 .education {
   &__details {
@@ -186,7 +211,7 @@ header .content-wrap {
     margin: 0.5rem 0;
   }
 
-  &__subject-list {
+  &__list {
     margin: 0;
   }
 }
@@ -330,15 +355,6 @@ header .content-wrap {
 }
 
 @media screen and (max-width: 775px) {
-  /* Global */
-  // h1 {
-  //   font-size: 3.25em;
-  // }
-
-  h2 {
-    font-size: 2em;
-  }
-
   .content-wrap {
     padding: 20px 0;
   }
