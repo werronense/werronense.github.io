@@ -19,3 +19,7 @@ Only write tests when explicitly instructed to do so.
 ## No comments
 
 Do not add comments to the code when you make changes.
+
+## Verification of changes
+
+Only verify changes when explicitly asked.
