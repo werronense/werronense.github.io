@@ -1,10 +1,16 @@
-function App() {
+import { Route, Routes, BrowserRouter } from "react-router";
+import Home from "./pages/home/Home.tsx";
+import Portfolio from "./pages/portfolio/Portfolio.tsx";
+import NotFound from "./pages/not-found/NotFound.tsx";
+
+export default function App() {
   return (
-    <main>
-      <h1>Stephen Werronen</h1>
-      <p>Full Stack Software Developer</p>
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
