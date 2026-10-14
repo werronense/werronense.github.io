@@ -11,9 +11,8 @@ export default function ExperienceItem({
 }: ExperienceItemProps) {
   return (
     <section>
-      <h3 className="text-lg">
-        {role}, <span className="italic">{company}</span>
-      </h3>
+      <h3 className="text-lg">{role}</h3>
+      <p className="italic">{company}</p>
       <p>
         {dates}, {location}
       </p>
