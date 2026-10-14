@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html, body {
+    background-color: #221d23;
+}
+
 @theme {
     --color-night: #221d23;
     /* --color-red: #c1292e; */
