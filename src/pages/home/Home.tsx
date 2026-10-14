@@ -34,9 +34,11 @@ export default function Home() {
       <div className="max-w-md mx-auto py-4">
         <section className="text-pearl">
           <h2 className="text-xl">Experience</h2>
-          {experience.map((item, index) => (
-            <ExperienceItem key={index} {...item} />
-          ))}
+          <div className="space-y-4">
+            {experience.map((item, index) => (
+              <ExperienceItem key={index} {...item} />
+            ))}
+          </div>
         </section>
       </div>
     </main>
