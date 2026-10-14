@@ -10,10 +10,6 @@ export default function Bio() {
           stack web apps (TypeScript, React, Node.js, SQL) with industry
           experience in legal tech, education, and marketing.
         </p>
-        <p>
-          Curious, adaptable, and driven to master new skills and apply them to
-          achieve great results.
-        </p>
       </div>
     </section>
   );
