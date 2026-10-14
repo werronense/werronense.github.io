@@ -1,4 +1,6 @@
 import portrait from "../../assets/stephen-werronen.jpg";
+import { experience } from "../../data/experience";
+import ExperienceItem from "./components/ExperienceItem";
 
 export default function Home() {
   return (
@@ -32,34 +34,9 @@ export default function Home() {
       <div className="max-w-md mx-auto py-4">
         <section className="text-pearl">
           <h2 className="text-xl">Experience</h2>
-          <section>
-            <h3 className="text-lg">
-              Full Stack Developer, <span className="italic">command+k</span>
-            </h3>
-            <p>2/2025-3/2026, Vancouver, BC</p>
-            <ul className="list-disc ml-4 py-2 space-y-2">
-              <li>
-                Collaborated with early-stage startup founders to transform
-                their vision into a Legal Tech app that achieved successful
-                acquisition.
-              </li>
-              <li>
-                Built dashboards and automations with React, TypeScript,
-                Next.js, Node.js, and PostgreSQL to reduce the cost of the core
-                product by over 50% and align with business strategy.
-              </li>
-              <li>
-                Took end-to-end ownership of designing and building new features
-                of a React app that led to the addition of over 4000 users in
-                three months.
-              </li>
-              <li>
-                Managed production updates including PostgreSQL database
-                migrations and feature releases with CI/CD tools such as Git,
-                GitHub, and Vercel to increase deployment speed by 200%.
-              </li>
-            </ul>
-          </section>
+          {experience.map((item, index) => (
+            <ExperienceItem key={index} {...item} />
+          ))}
         </section>
       </div>
     </main>
